@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: rft-spring-eureka
+
+server:
+  port: 8761
+#配置eureka
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    healthcheck:
+      enabled: true
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      default-zone: https://${eureka.instance.hostname}:${server.port}/eureka/

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rft-spring-feign" />
+        <module name="rft-spring-base" />
+        <module name="rft-spring-eureka" />
+        <module name="rft-order-service" />
+        <module name="rft-spring-zookeeper" />
+        <module name="rft-spring-admin" />
+        <module name="rft-spring-config" />
+        <module name="rft-spring-dubbo" />
+        <module name="rft-user-service" />
+        <module name="rft-spring-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rft-service-user" target="1.8" />
+      <module name="rft-spring-zookeeper" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rft-order-service" options="-parameters" />
+      <module name="rft-service-user" options="-parameters" />
+      <module name="rft-spring-admin" options="-parameters" />
+      <module name="rft-spring-base" options="-parameters" />
+      <module name="rft-spring-config" options="-parameters" />
+      <module name="rft-spring-dubbo" options="-parameters" />
+      <module name="rft-spring-eureka" options="-parameters" />
+      <module name="rft-spring-feign" options="-parameters" />
+      <module name="rft-spring-gateway" options="-parameters" />
+      <module name="rft-spring-service" options="-parameters" />
+      <module name="rft-spring-zookeeper" options="-parameters" />
+      <module name="rft-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

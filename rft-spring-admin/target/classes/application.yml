@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: rft-admin-server
+server:
+  port: 8888

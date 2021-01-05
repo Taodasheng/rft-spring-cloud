@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: rft-user-service
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+  cloud:
+    zookeeper:
+      coo
+server:
+  port: 8081
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      default-zone: https://localhost:8761/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: false
+ribbon:
+  eureka:
+    enabled: true

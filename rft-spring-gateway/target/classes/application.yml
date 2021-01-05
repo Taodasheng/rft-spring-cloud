@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: rft-user-service
+          uri: lb://rft-user-service
+          predicates:
+            - Path=/api/u/**
+          filters:
+            - StripPrefix=2
+
+        - id: rft-order-service
+          uri: lb://rft-order-service
+          predicates:
+            - Path=/api/o/**
+          filters:
+            - StripPrefix=2
